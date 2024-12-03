@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex">
+      <!-- Sidebar -->
+      <div class="bg-blue-900 text-white w-64 min-h-screen flex flex-col">
+        <div
+          class="flex items-center justify-center h-16 border-b border-blue-800"
+        >
+          <img
+            alt="Mailmeteor logo"
+            class="mr-2"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/doidwcDe6QVFeUFe4bepsfG2YVDT5SWwChuXjfL6yKJoKAp8E.jpg"
+            width="24"
+          />
+          <span class="text-xl font-bold"> mailmeteor </span>
+        </div>
+        <nav class="flex-1 px-4 py-6">
+          <ul>
+            <li class="mb-4">
+              <a class="flex items-center text-blue-300" href="#">
+                <i class="fas fa-play-circle mr-3"> </i>
+                <span> Campaigns </span>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a class="flex items-center text-white" href="#">
+                <i class="fas fa-file-alt mr-3"> </i>
+                <span> Templates </span>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a class="flex items-center text-white" href="#">
+                <i class="fas fa-address-book mr-3"> </i>
+                <span> Contacts </span>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a class="flex items-center text-white" href="#">
+                <i class="fas fa-cog mr-3"> </i>
+                <span> Account &amp; Billing </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="px-4 py-6">
+          <div class="bg-blue-800 p-4 rounded-lg">
+            <p class="text-sm">Do even more with Mailmeteor Premium</p>
+            <a class="text-blue-300 underline" href="#"> Get started → </a>
+          </div>
+        </div>
+      </div>
+      <!-- Main content -->
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-2xl font-bold">Campaigns</h1>
+          <div class="flex items-center space-x-4">
+            <div class="relative">
+              <input
+                class="pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Search"
+                type="text"
+              />
+              <i
+                class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              >
+              </i>
+            </div>
+            <button
+              class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center"
+            >
+              <i class="fas fa-filter mr-2"> </i>
+              Filter
+            </button>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center"
+            >
+              <i class="fas fa-plus mr-2"> </i>
+              New campaign
+            </button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex space-x-6 mb-4">
+            <a class="text-blue-500 border-b-2 border-blue-500 pb-2" href="#">
+              Recent
+            </a>
+            <a class="text-gray-500 pb-2" href="#"> Active </a>
+            <a class="text-gray-500 pb-2" href="#"> Scheduled </a>
+            <a class="text-gray-500 pb-2" href="#"> Drafts </a>
+            <a class="text-gray-500 pb-2" href="#"> Ended </a>
+            <a class="text-gray-500 pb-2" href="#"> All </a>
+          </div>
+          <div class="border rounded-lg">
+            <table class="w-full text-left">
+              <thead>
+                <tr class="border-b">
+                  <th class="py-3 px-4">Name</th>
+                  <th class="py-3 px-4">Sent</th>
+                  <th class="py-3 px-4">Opens</th>
+                  <th class="py-3 px-4">Clicks</th>
+                  <th class="py-3 px-4">Status</th>
+                  <th class="py-3 px-4">
+                    Created
+                    <i class="fas fa-chevron-down"> </i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="py-6 text-center" colspan="6">
+                    <p class="text-lg font-semibold">
+                      Welcome aboard Mailmeteor
+                    </p>
+                    <p class="text-gray-500 mb-4">
+                      Get started by sending your first campaign with
+                      Mailmeteor.
+                    </p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                      Start a campaign
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4 text-gray-500" colspan="6">0 results</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+              Previous
+            </button>
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
